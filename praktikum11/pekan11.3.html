@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penjumlahan Dua Bilangan</title>
+
+  <style>
+    body{
+      background-color: dimgray;
+      color: white;
+      font-family: cursive;
+      font-weight: bold;
+    }
+  </style>
+  
+    <script>
+      function hitungJumlah() {
+        var bilangan1 = parseFloat(document.getElementById('bilangan1').value);
+        var bilangan2 = parseFloat(document.getElementById('bilangan2').value);
+  
+        
+        var jumlah = bilangan1 + bilangan2;
+  
+        document.getElementById('hasil').innerHTML = 'Jumlah: ' + jumlah;
+      }
+    </script>
+</head>
+<body>
+
+  <h2>Penjumlahan Dua Bilangan</h2>
+
+  <label for="bilangan1"></label>
+  <input type="number" id="bilangan1" placeholder="Masukkan bilangan pertama">
+
+  <br>
+  +
+  <br>
+
+  <label for="bilangan2"></label>
+  <input type="number" id="bilangan2" placeholder="Masukkan bilangan kedua">
+
+  <br>
+
+  <button onclick="hitungJumlah()">Hitung Jumlah</button>
+
+  <br>
+
+  <h3>Hasil Jumlah:</h3>
+  <p id="hasil"></p>
+
+
+</body>
+</html>

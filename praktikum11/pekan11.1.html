@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Luas dan Keliling Lingkaran</title>
+  <style>
+    body{
+        background-color: dimgray;
+        color: white;
+        font-family: cursive;
+        font-weight: bold;
+    }
+  </style>
+
+  <script>
+    function hitung() {
+
+      var radius = document.getElementById('radius').value;
+
+      var luas = Math.PI * Math.pow(radius, 2);
+      var keliling = 2 * Math.PI * radius;
+
+      document.getElementById('luas').innerHTML = 'Luas: ' + luas.toFixed(2);
+      document.getElementById('keliling').innerHTML = 'Keliling: ' + keliling.toFixed(2);
+    }
+    </script>
+</head>
+<body>
+
+  <h1>Hitung Luas dan Keliling Lingkaran</h1>
+
+  <label for="radius">Jari-jari Lingkaran:</label>
+  <input type="number" id="radius" placeholder="Masukkan jari-jari lingkaran">
+
+  <br>
+
+  <button onclick="hitung()">Hitung</button>
+
+  <br>
+
+  <h3>Hasil:</h3>
+  <p id="luas">Luas: </p>
+  <p id="keliling">Keliling: </p>
+
+
+</body>
+</html>
